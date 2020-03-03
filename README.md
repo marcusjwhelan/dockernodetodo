@@ -42,6 +42,10 @@ GRANT ALL PRIVILEGES ON ctodo.* to 'utodo'@'localhost';
 
  Live reloading option for development
  ```bash
- docker build -f Dockerfile.dev -t node-dev .
- docker run --rm -it -p 8000:8000 -v ${PWD}:/app node-dev
+ docker build -f Dockerfile.dev -t node-dev-tag .
+ docker run --name node-dev-name --rm -it -p 8000:8000 -v ${PWD}:/app node-dev-tag
  ```
+
+ ## Note -
+
+ Make sure you have the port that is being exposed set to the same exposed port in server.js
