@@ -1,6 +1,6 @@
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: "GoingDigital0101",
-    DB: "ctodo"
+    HOST: process.env.MYSQL_HOST,
+    USER: process.env.MYSQL_USER,
+    PASSWORD: process.env.MYSQL_PASSWORD,
+    DB: process.env.MYSQL_DB
   };

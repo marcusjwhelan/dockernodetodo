@@ -14,7 +14,7 @@ RUN npm install -qy
 COPY . .
 
 # expose Port to network
-EXPOSE 8000
+EXPOSE 8080
 
 # run on
 CMD [ "nodemon", "server.js" ]
